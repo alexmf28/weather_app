@@ -61,9 +61,12 @@ const App = () => {
           />
         </section>
         <section className="current_day_and_hour_section">
-          <div className="day_part">
-            {weather && <h1>{currentTextDay(weather).dayOfWeek}</h1>}
-          </div>
+          <aside>
+            <div className="day_part">
+              {weather && <h1>{currentTextDay(weather).dayOfWeek}</h1>}
+            </div>
+          </aside>
+
           <aside>
             <div className="first_header_part">
               {weather && <h1>{currentTextDay(weather).monthOfYear}</h1>}

@@ -1,6 +1,6 @@
 import React from "react";
 import { forecastTextDays } from "../logic";
-
+import "../App.css";
 function ForecastDays(weather) {
   const days = weather.weather?.forecast.forecastday;
   return (
@@ -43,12 +43,12 @@ function ForecastDays(weather) {
                 }
                 alt="forecast weather icon"
               />
-              <h6>
+              <h5>
                 {
                   weather?.weather.forecast.forecastday[index].day.condition
                     .text
                 }
-              </h6>
+              </h5>
               <aside className="forecast_information">
                 <p>
                   <span>Maximum temperature:&nbsp;</span>
